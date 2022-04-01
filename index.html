@@ -11,7 +11,7 @@
     <div class="calculatorContainer">
         <div class="display">
             <div class="equation"></div>
-            <div class="currentInput"></div>
+            <div id="inputDisplay" class="currentInput"></div>
         </div>
         <!-- will need to adjust the order of these buttons when I add numbers -->
         <div id="operators">
@@ -22,19 +22,19 @@
             
         </div>
         <div id="buttons">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">1</button>
-            <button class="button">2</button> 
-            <button class="button">3</button>
+            <button id="7btn" value=7 class="button" onclick="numberClickHandler(value)">7</button>
+            <button id="8btn" value=8 class="button" onclick="numberClickHandler(value)">8</button>
+            <button id="9btn" value=9 class="button" onclick="numberClickHandler(value)">9</button>
+            <button id="4btn" value=4 class="button" onclick="numberClickHandler(value)">4</button>
+            <button id="5btn" value=5 class="button" onclick="numberClickHandler(value)">5</button>
+            <button id="6btn" value=6 class="button" onclick="numberClickHandler(value)">6</button>
+            <button id="1btn" value=1 class="button" onclick="numberClickHandler(value)">1</button>
+            <button id="2btn" value=2 class="button" onclick="numberClickHandler(value)">2</button> 
+            <button id="3btn" value=3 class="button" onclick="numberClickHandler(value)">3</button>
             <!-- <button id='plus-minus' class="button">+/-</button> -->
-            <button class="button">0</button>
+            <button class="button" onclick="numberClickHandler(value)">0</button>
             <button class="button">.</button>
-            <button id="equals" class="button">=</button>
+            <button id="equalsBtn" value="=" class="button">=</button>
         </div>
     </div>
     
