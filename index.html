@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>calculator</title>
 </head>
 <body>
-    <div class="calculatorContainer">
-        <div class="display">
-            <div class="equation"></div>
-            <div id="inputDisplay" class="currentInput"></div>
+    <div class="container">
+        <div class="header"> header text</div>
+        <div class="calculatorGrid">
+            <div class="output">
+                <div data-previousOperand class="previousOperand"></div>
+                <div data-currentOperand class="currentOperand"></div>
+            </div>
+            <button data-allClear class="span2">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals class="span2">=</button>
         </div>
-        <!-- will need to adjust the order of these buttons when I add numbers -->
-        <div id="operators">
-            <button id="addbtn" value="+" class="button" onclick="calcClickHandler(value)">+</button>
-            <button id="subtractbtn" value="-" class="button" onclick="calcClickHandler(value)">-</button>
-            <button id="multiplybtn" value="X" class="button" onclick="calcClickHandler(value)">X</button>
-            <button id="dividebtn" value="/" class="button" onclick="calcClickHandler(value)">/</button>
-            
-        </div>
-        <div id="buttons">
-            <button id="7btn" value=7 class="button" onclick="calcClickHandler(value)">7</button>
-            <button id="8btn" value=8 class="button" onclick="calcClickHandler(value)">8</button>
-            <button id="9btn" value=9 class="button" onclick="calcClickHandler(value)">9</button>
-            <button id="4btn" value=4 class="button" onclick="calcClickHandler(value)">4</button>
-            <button id="5btn" value=5 class="button" onclick="calcClickHandler(value)">5</button>
-            <button id="6btn" value=6 class="button" onclick="calcClickHandler(value)">6</button>
-            <button id="1btn" value=1 class="button" onclick="calcClickHandler(value)">1</button>
-            <button id="2btn" value=2 class="button" onclick="calcClickHandler(value)">2</button> 
-            <button id="3btn" value=3 class="button" onclick="calcClickHandler(value)">3</button>
-            <!-- <button id='plus-minus' class="button">+/-</button> -->
-            <button id="0btn" value=0 class="button" onclick="calcClickHandler(value)">0</button>
-            <button id="decimalbtn" value="." class="button"onclick="calcClickHandler(value)">.</button>
-            <button id="equalsbtn" value="=" class="button"onclick="calcClickHandler(value)">=</button>
-        </div>
+        <div class="footer">footer text</div>
     </div>
     
-
-
-    <script src="script.js"></script>
 </body>
 </html>
