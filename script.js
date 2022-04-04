@@ -43,7 +43,7 @@ class Calculator {
             case '*':
                 computation = prev * current
                 break
-            case '÷':
+            case '/':
                 if(current == 0){
                     alert('cannot divide by zero')
                     return
@@ -134,6 +134,11 @@ window.addEventListener('keydown', (event) =>{
         calculator.appendNumber(event.key);
         calculator.updateDisplay();
     }
+    if (event.key === '+' || event.key === '-' || event.key === '/' || event.key === '*' ) {
+        calculator.chooseOperation(event.key);
+        calculator.updateDisplay();
+    }
+    
 
 });
 
