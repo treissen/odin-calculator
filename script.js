@@ -143,7 +143,13 @@ window.addEventListener('keydown', (event) =>{
         calculator.compute();
         calculator.updateDisplay();
     }
-    
-
+    if (event.key === 'Backspace') {
+        calculator.delete();
+        calculator.updateDisplay();
+    }
+    if (event.key === 'Delete') {
+        calculator.clear();
+        calculator.updateDisplay();
+    }
 });
 
