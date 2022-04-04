@@ -129,12 +129,11 @@ deleteButton.addEventListener('click', button => {
 
 // keyboard functionality
 
-window.addEventListener('keydown', handleKeyboardInput());
- // need to add following code to calculator class? i dont think i do...
-function handleKeyboardInput(event) {
+window.addEventListener('keydown', (event) =>{
     if (event.key >= 0 && event.key <= 9) {
         calculator.appendNumber(event.key);
-        calculator.updateDisplay();
+        calculator.updateDisplay();32312
     }
-        
-}
+
+});
+
