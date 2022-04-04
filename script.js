@@ -130,12 +130,17 @@ deleteButton.addEventListener('click', button => {
 // keyboard functionality
 
 window.addEventListener('keydown', (event) =>{
+    console.log(event.key)
     if (event.key >= 0 && event.key <= 9 || event.key === '.') {
         calculator.appendNumber(event.key);
         calculator.updateDisplay();
     }
     if (event.key === '+' || event.key === '-' || event.key === '/' || event.key === '*' ) {
         calculator.chooseOperation(event.key);
+        calculator.updateDisplay();
+    }
+    if (event.key === 'Enter' || event.key === '=') {
+        calculator.compute();
         calculator.updateDisplay();
     }
     
